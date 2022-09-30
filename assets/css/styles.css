@@ -763,20 +763,25 @@ footer {
   height: 202px;
 }
 
-ol {
+.footer__links-list {
   height: 255px;
+}
+.footer__links-list ol {
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  list-style-type: none;
 }
 
+ol {
+  list-style-type: none;
+}
 .footer__content_payment {
   width: 152px;
 }
 
-.footer__content_links h6,
-.footer__content_smartwinners h6 {
+.footer__content_links h5,
+.footer__content_smartwinners h5 {
   margin-bottom: 15px;
   font-family: Roboto;
   font-size: 16px;
@@ -786,7 +791,7 @@ ol {
   text-align: left;
 }
 
-.footer__content_payment h6 {
+.footer__content_payment h5 {
   margin-bottom: 10px;
   font-family: Roboto;
   font-size: 16px;
@@ -991,6 +996,7 @@ footer {
 
   footer ol,
   .footer__content_links,
+  .footer__links-list,
   .footer__content_smartwinners {
     height: auto;
   }
